@@ -11,7 +11,7 @@ export class AppComponent {
   isSmallScreen: boolean = window.innerWidth <= 640;
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: Event): void {
+  onResize(): void {
     this.isSmallScreen = window.innerWidth <= 640;
   }
 

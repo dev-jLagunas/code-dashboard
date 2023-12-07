@@ -38,6 +38,7 @@
   >
     <app-certifications></app-certifications>
   </div>
+  @if (isSmallScreen) {
   <button (click)="scroll('left')" class="fixed bottom-0 left-3 text-4xl">
     <i class="fas fa-arrow-left text-white opacity-50 hover:opacity-100"></i>
   </button>
@@ -46,4 +47,5 @@
       class="fas fa-arrow-right text-white text-4xl opacity-50 hover:opacity-100"
     ></i>
   </button>
+  }
 </section>
