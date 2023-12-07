@@ -1,1 +1,21 @@
-<p>certifications works!</p>
+<section
+  class="h-screen w-screen flex flex-col justify-center items-center xl:w-max xl:h-max xl:mt-24 xl:-ml-10"
+>
+  <div class="text-white text-center">
+    <h1 class="text-xl xl:text-base">Certifications Timeline</h1>
+    <p class="text-gray-300 xl:text-xs">These are the completed courses and</p>
+    <p class="text-gray-300 xl:text-xs">certifications I hold</p>
+  </div>
+  <ngx-charts-heat-map
+    [view]="[250, 250]"
+    [scheme]="'ocean'"
+    [xAxis]="true"
+    [showXAxisLabel]="true"
+    xAxisLabel="Period of Months"
+    [results]="heatMapData"
+    style="fill: white"
+  ></ngx-charts-heat-map>
+  <p class="text-gray-300 xl:text-xs">
+    Hover over colored boxes to see details
+  </p>
+</section>

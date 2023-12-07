@@ -1,1 +1,17 @@
-<p>technologies works!</p>
+<section
+  class="h-screen w-screen flex flex-col justify-center items-center xl:w-full xl:h-full xl:mt-10 xl:-ml-10"
+>
+  <div class="text-center">
+    <p class="text-white text-xl">Technologies Practiced</p>
+    <p class="text-gray-300">Confidence level in each individual technology:</p>
+  </div>
+  <ngx-charts-pie-grid
+    [view]="[370, 490]"
+    [scheme]="'vivid'"
+    [results]="technologiesData"
+    [animations]="true"
+    [designatedTotal]="100"
+    style="fill: white"
+    class=""
+  ></ngx-charts-pie-grid>
+</section>

@@ -1,1 +1,44 @@
-<p>stats works!</p>
+<section
+  class="h-screen w-screen flex flex-col items-center justify-center gap-y-2 xl:w-full xl:h-full xl:grid xl:grid-cols-5"
+>
+  <div class="text-center">
+    <h2 class="text-xl text-white xl:text-base">Start Day: October, 13 2022</h2>
+    <p class="text-gray-300 xl:text-xs">
+      The day programming became my passion
+    </p>
+  </div>
+  <div
+    class="border-2 border-emerald-500 w-2/3 xl:w-60 flex flex-col justify-center items-center mx-auto rounded-lg"
+  >
+    <i
+      class="fa-regular fa-calendar-days text-emerald-500 text-4xl xl:text-xl"
+    ></i>
+    <p class="text-white">{{ daysStudied }}+</p>
+    <p class="text-white">Days Studied</p>
+  </div>
+  <div
+    class="border-2 border-orange-500 w-2/3 xl:w-60 flex flex-col justify-center items-center mx-auto rounded-lg"
+  >
+    <i
+      class="fa-solid fa-diagram-project text-orange-500 text-4x xl:text-xl"
+    ></i>
+    <p class="text-white">{{ projectsCompleted }}+</p>
+    <p class="text-white">Projects Made</p>
+  </div>
+  <div
+    class="border-2 border-blue-500 w-2/3 xl:w-60 flex flex-col justify-center items-center mx-auto rounded-lg"
+  >
+    <i class="fa-solid fa-mug-hot text-blue-500 text-4xl xl:text-xl"></i>
+    <p class="text-white">{{ cupsOfCoffee }}+</p>
+    <p class="text-white">Cups of Coffee</p>
+  </div>
+  <div
+    class="border-2 border-fuchsia-500 w-2/3 xl:w-60 flex flex-col justify-center items-center mx-auto rounded-lg"
+  >
+    <i
+      class="fa-regular fa-face-tired text-fuchsia-500 text-4xl xl:text-xl"
+    ></i>
+    <p class="text-white">{{ mentalBreakdowns }}+</p>
+    <p class="text-white">Mental Breakdowns</p>
+  </div>
+</section>

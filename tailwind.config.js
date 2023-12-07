@@ -11,7 +11,11 @@ module.exports = {
     "src/app/certifications/certifications.component.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        "90vw": "90vw",
+      },
+    },
   },
   plugins: [],
 };

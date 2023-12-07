@@ -1,15 +1,49 @@
-<h1>How I spend my day?</h1>
-<ngx-charts-pie-chart
-  [results]="data"
-  [view]="[300, 300]"
-  [animations]="true"
-  [gradient]="false"
-  [scheme]="'picnic'"
-  [legend]="true"
-  [legendPosition]="legendPosition"
-  [doughnut]="false"
-  [explodeSlices]="false"
-  legendTitle="Stuff I did today"
-  [scheme]="'picnic'"
+<section
+  class="flex overflow-x-scroll xl:overflow-auto xl:grid xl:grid-cols-12 xl:grid-rows-6 xl:h-screen"
+  [class.container]="isSmallScreen"
+  #scrollContainer
 >
-</ngx-charts-pie-chart>
+  <div
+    class="xl:h-full xl:col-start-1 xl:col-end-3 xl:row-start-1 xl:row-end-7"
+  >
+    <app-intro class=""></app-intro>
+  </div>
+  <div
+    class="xl:col-start-2 xl:col-end-12 xl:row-start-1 xl:row-end-2 xl:h-full"
+  >
+    <app-stats></app-stats>
+  </div>
+  <div
+    class="xl:col-start-2 xl:col-end-7 xl:row-start-2 xl:row-end-6 xl:h-full xl:w-full"
+  >
+    <app-technologies></app-technologies>
+  </div>
+  <div
+    class="xl:h-full xl:w-full xl:col-start-10 xl:col-end-12 xl:row-start-2 xl:row-end-3"
+  >
+    <app-daily-schedule></app-daily-schedule>
+  </div>
+  <div
+    class="xl:h-full xl:w-full xl:col-start-10 xl:col-end-12 xl:row-start-4 xl:row-end-7"
+  >
+    <app-study-methods></app-study-methods>
+  </div>
+  <div
+    class="xl:h-full xl:w-full xl:col-start-8 xl:col-end-10 xl:row-start-2 xl:row-end-5"
+  >
+    <app-skill-progression></app-skill-progression>
+  </div>
+  <div
+    class="xl:h-full xl:w-full xl:col-start-6 xl:col-end-7 xl:row-start-2 xl:row-end-5"
+  >
+    <app-certifications></app-certifications>
+  </div>
+  <button (click)="scroll('left')" class="fixed bottom-0 left-3 text-4xl">
+    <i class="fas fa-arrow-left text-white opacity-50 hover:opacity-100"></i>
+  </button>
+  <button (click)="scroll('right')" class="fixed bottom-0 right-3">
+    <i
+      class="fas fa-arrow-right text-white text-4xl opacity-50 hover:opacity-100"
+    ></i>
+  </button>
+</section>

@@ -1,0 +1,14 @@
+@media (max-width: 640px) {
+  .container {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .container div {
+    scroll-snap-align: center;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+}

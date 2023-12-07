@@ -1,1 +1,39 @@
-<p>daily-schedule works!</p>
+<section
+  class="h-screen w-screen flex flex-col justify-center items-center -space-y-16 xl:-space-y-32 xl:w-min xl:h-min xl:ml-8"
+>
+  <div class="text-white text-center">
+    <h1 class="text-xl xl:text-base">Daily Study Schedule</h1>
+    <p class="text-xl xl:text-xs">How I split my daily study hours</p>
+    <p class="text-sm text-gray-300 xl:text-xs">Based on a 12 hour study day</p>
+  </div>
+  <ngx-charts-pie-chart
+    [results]="data"
+    [view]="[320, 420]"
+    [animations]="true"
+    [gradient]="false"
+    [scheme]="'picnic'"
+    [legend]="false"
+    [labels]="true"
+    [doughnut]="true"
+    [maxLabelLength]="12"
+    style="fill: white"
+    class="-mt-10 ml-8"
+  >
+  </ngx-charts-pie-chart>
+  <div class="text-white grid grid-cols-2 text-xs gap-2">
+    <p><span class="inline-block w-3 h-3 bg-yellow mr-2"></span>Coding</p>
+    <p>
+      <span class="inline-block w-3 h-3 bg-teal mr-2"></span>
+      Documentation
+    </p>
+    <p>
+      <span class="inline-block w-3 h-3 bg-orange mr-2"></span>Youtube Tutorials
+    </p>
+    <p>
+      <span class="inline-block w-3 h-3 bg-turquoise mr-2"></span>Data
+      Structures
+    </p>
+    <p><span class="inline-block w-3 h-3 bg-salmon mr-2"></span>Algorithms</p>
+    <p><span class="inline-block w-3 h-3 bg-sky mr-2"></span>CSS Styling</p>
+  </div>
+</section>

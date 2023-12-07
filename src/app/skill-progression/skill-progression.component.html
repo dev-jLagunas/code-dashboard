@@ -1,1 +1,45 @@
-<p>skill-progression works!</p>
+<section
+  class="h-screen w-screen flex flex-col justify-center items-center xl:w-max xl:h-max xl:mt-6 xl:-ml-5"
+>
+  <div class="text-white text-center">
+    <h1 class="text-xl">Progression of Skills</h1>
+    <p class="text-base text-gray-300">
+      The progression of skills between the <br />1st and 2nd halves of my
+      journey
+    </p>
+  </div>
+  <ngx-charts-bar-horizontal-2d
+    [view]="[300, 390]"
+    [scheme]="'vivid'"
+    [results]="chartData"
+    [animations]="true"
+    [xAxis]="true"
+    [yAxis]="true"
+    [showXAxisLabel]="false"
+    [showYAxisLabel]="true"
+    [xAxisLabel]="'Skills'"
+    [yAxisLabel]="'Time Period'"
+    [xScaleMax]="10"
+    [showGridLines]="true"
+    style="fill: white"
+  ></ngx-charts-bar-horizontal-2d>
+  <div class="text-white grid grid-cols-2 text-xs mt-4 gap-2">
+    <p>
+      <span class="inline-block w-3 h-3 bg-gray mr-2"></span>Problem Solving
+    </p>
+    <p>
+      <span class="inline-block w-3 h-3 bg-darkBlue mr-2"></span>Adaptibility
+    </p>
+    <p>
+      <span class="inline-block w-3 h-3 bg-sky mr-2"></span>Attention to Detail
+    </p>
+    <p><span class="inline-block w-3 h-3 bg-Em mr-2"></span>Self-Motivation</p>
+    <p class="">
+      <span class="inline-block w-3 h-3 bg-neonYell mr-2"></span>User-Centric
+      Mindset
+    </p>
+    <p class="text-white flex justify-end w-max text-xl pl-10 rounded-xl mr-11">
+      Skills
+    </p>
+  </div>
+</section>

@@ -13,7 +13,16 @@ import { SkillProgressionComponent } from './skill-progression/skill-progression
 import { CertificationsComponent } from './certifications/certifications.component';
 
 @NgModule({
-  declarations: [AppComponent, IntroComponent, StatsComponent, TechnologiesComponent, DailyScheduleComponent, StudyMethodsComponent, SkillProgressionComponent, CertificationsComponent],
+  declarations: [
+    AppComponent,
+    IntroComponent,
+    StatsComponent,
+    TechnologiesComponent,
+    DailyScheduleComponent,
+    StudyMethodsComponent,
+    SkillProgressionComponent,
+    CertificationsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
